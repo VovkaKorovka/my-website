@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин</title>
+  <title>Магазин з кошиком</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,13 +11,34 @@
   <header>
     <h1>Мій магазин</h1>
     <div id="cart">
-      🛒 Кошик: <span id="cart-count">0</span> товарів | <span id="cart-total">0</span> грн
+      🛒 <span id="cart-summary">Кошик: 0 товарів | 0 грн</span>
+      <button id="view-cart">Переглянути кошик</button>
     </div>
   </header>
 
-  <main id="products">
-    <!-- Товари будуть тут -->
-  </main>
+  <main id="products"></main>
+
+  <!-- Модальне вікно товару -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close">&times;</span>
+      <img id="modal-img" src="" alt="" />
+      <h3 id="modal-name"></h3>
+      <p id="modal-description"></p>
+      <p>Ціна: <span id="modal-price"></span> грн</p>
+      <button id="modal-add">Додати в кошик</button>
+    </div>
+  </div>
+
+  <!-- Модальне вікно кошика -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span id="cart-close">&times;</span>
+      <h2>Кошик</h2>
+      <div id="cart-items"></div>
+      <p>Загальна сума: <span id="cart-total">0</span> грн</p>
+    </div>
+  </div>
 
   <footer>
     <p>© 2026 Мій магазин</p>
