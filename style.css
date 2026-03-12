@@ -8,20 +8,30 @@ header {
   background: #4CAF50;
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#cart {
-  margin-top: 10px;
+#cart-summary {
+  font-weight: bold;
 }
 
 #cart button {
+  padding: 8px 12px;
   margin-left: 10px;
-  padding: 5px 10px;
   cursor: pointer;
   background: white;
   color: #4CAF50;
-  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#cart button:hover {
+  background: #45a049;
+  color: white;
+  border-color: #45a049;
 }
 
 main {
