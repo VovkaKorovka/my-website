@@ -3,56 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мій сайт</title>
+  <title>Магазин</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Ласкаво просимо на мій сайт!</h1>
-    <nav>
-      <a href="#about">Про нас</a>
-      <a href="#services">Послуги</a>
-      <a href="#contact">Контакти</a>
-    </nav>
+    <h1>Мій магазин</h1>
+    <div id="cart">
+      🛒 Кошик: <span id="cart-count">0</span> товарів | <span id="cart-total">0</span> грн
+    </div>
   </header>
 
+  <main id="products">
+    <!-- Товари будуть тут -->
+  </main>
 
-  <section id="about">
-    <h2>Про нас</h2>
-    <p>Ми робимо круті речі!</p>
-  </section>
-
-  <section id="services">
-    <h2>Послуги</h2>
-    <p>Пропонуємо бла бла.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Контакти</h2>
-    <form>
-      <input type="text" placeholder="Ваше ім'я">
-      <input type="email" placeholder="Email">
-      <button>Відправити</button>
-    </form>
-  </section>
-
-  <!-- Підвал -->
   <footer>
-    <p>© 2026 Мій сайт</p>
+    <p>© 2026 Мій магазин</p>
   </footer>
 
-  <!-- JS для плавного скролу -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
