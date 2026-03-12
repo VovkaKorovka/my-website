@@ -1,7 +1,7 @@
 const products = [
-  { id: 1, name: "Смартфон Samsung Galaxy S23", price: 25000, img: "https://via.placeholder.com/200x150?text=Samsung+S23", description: "Сучасний смартфон з 8GB RAM та 256GB пам'яті, камера 108MP." },
-  { id: 2, name: "Ноутбук MacBook Air M2", price: 45000, img: "https://via.placeholder.com/200x150?text=MacBook+Air", description: "Легкий ноутбук для роботи та навчання, процесор Apple M2, 16GB RAM." },
-  { id: 3, name: "Навушники Sony WH-1000XM4", price: 7000, img: "https://via.placeholder.com/200x150?text=Sony+Headphones", description: "Безпровідні навушники з активним шумопоглинанням та високоякісним звуком." }
+  { id: 1, name: "Смартфон Samsung Galaxy S23", price: 25000, img: "https://cdn.samsungshop.com.ua/products/7491/cover/163274/Rectangle-122-large-webp-large.webp", description: "Сучасний смартфон з 8GB RAM та 256GB пам'яті, камера 108MP." },
+  { id: 2, name: "Ноутбук MacBook Air M2", price: 45000, img: "https://3d-model.net/uploads/posts/2023-12/noutbuk-macbook-air-m2-2022-ot-apple-0.jpg", description: "Легкий ноутбук для роботи та навчання, процесор Apple M2, 16GB RAM." },
+  { id: 3, name: "Навушники Sony WH-1000XM4", price: 7000, img: "https://tse4.mm.bing.net/th/id/OIP.ucpUS0IU8lXH7XXQvU3l5QHaK_?rs=1&pid=ImgDetMain&o=7&rm=3", description: "Безпровідні навушники з активним шумопоглинанням та високоякісним звуком." }
 ];
 
 // Кошик {productId: quantity}
